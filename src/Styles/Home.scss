@@ -1,0 +1,117 @@
+$primary-color : #B2DBBF;
+$text-color : #FF1654;
+$background-color : #70C1B3;
+
+.HomeUi{
+    width:100%
+}
+
+nav{
+    background-color:$primary-color ;
+}
+
+.logo{
+    width: 5rem;
+    height: 3rem;
+}
+
+.sideBar{
+    position: fixed;
+    top: 4rem;
+    right: 0.5rem;
+}
+
+.socialLink{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 3rem;
+    height: 20vh;
+}
+
+.social-icon{
+    position: relative;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.inLinks{
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem;
+    width: 100%;
+    height: 3rem;
+    background-color:$primary-color ;
+}
+
+a.nav-link {
+    display: block;
+    padding: .8rem 0.5rem;
+    transition: 500ms linear
+}
+
+a:hover.nav-link {
+    color: $text-color
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes bounce {
+    0% {
+        transform:  rotate(0deg) ; top: -5px
+    }
+    25% {
+        transform:  rotate(10deg) ; top: 5px
+    }
+    50% {
+        transform:rotate(0deg) ; top: -5px
+    }
+    75% {
+        transform:rotate(-10deg) ; top : 5px
+    }
+    100% {
+        transform:rotate(0deg) ; top : -5px
+    }
+}
+
+
+
+#Home-Bg{
+    width: 100%;
+    height: 40vh;
+    background-color: $background-color ;
+    z-index: -1;
+    position: absolute;
+}
+
+.Home-body{
+    font-size: 16px;
+    position: absolute;
+    color: #FF1654;
+    margin-top: 10rem;
+    width: 100%;
+    height: 40vh;
+    text-align: center ;
+
+    h1.display-3 {
+        position: relative;
+        font-size: 1.8rem;
+    }
+    h3.display-3{
+        position: relative;
+        font-size: 1.3rem
+    }
+    
+
+}
+

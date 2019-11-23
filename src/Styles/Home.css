@@ -1,0 +1,159 @@
+.HomeUi {
+  width: 100%;
+}
+
+nav {
+  background-color: #B2DBBF;
+}
+
+.logo {
+  width: 5rem;
+  height: 3rem;
+}
+
+.sideBar {
+  position: fixed;
+  top: 4rem;
+  right: 0.5rem;
+}
+
+.socialLink {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 3rem;
+  height: 20vh;
+}
+
+.social-icon {
+  position: relative;
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+.inLinks {
+  position: fixed;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 4rem;
+      grid-template-rows: 4rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #B2DBBF;
+}
+
+a.nav-link {
+  display: block;
+  padding: .8rem 0.5rem;
+  -webkit-transition: 500ms linear;
+  transition: 500ms linear;
+}
+
+a:hover.nav-link {
+  color: #FF1654;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 5px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    top: 5px;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 5px;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    top: 5px;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -5px;
+  }
+}
+
+#Home-Bg {
+  width: 100%;
+  height: 40vh;
+  background-color: #70C1B3;
+  z-index: -1;
+  position: absolute;
+}
+
+.Home-body {
+  font-size: 16px;
+  position: absolute;
+  color: #FF1654;
+  margin-top: 10rem;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+}
+
+.Home-body h1.display-3 {
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.Home-body h3.display-3 {
+  position: relative;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=Home.css.map */
