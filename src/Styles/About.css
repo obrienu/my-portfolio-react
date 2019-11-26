@@ -1,0 +1,234 @@
+.About {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  background-color: #B2DBBF;
+}
+
+span.Nav-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 5;
+}
+
+span.Nav-icon .fa-bars {
+  font-size: 2rem;
+  color: #247BA0;
+  left: 1rem;
+}
+
+.About-nav {
+  padding: 1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #247BA0;
+  height: 30vh;
+  width: 30%;
+  position: relative;
+  left: 0;
+  z-index: 5;
+}
+
+.nav-animation {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: nav;
+          animation-name: nav;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+
+@-webkit-keyframes nav {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  40% {
+    height: 30vh;
+    width: 30%;
+  }
+  60% {
+    height: 25vh;
+    width: 25%;
+  }
+  80% {
+    height: 30vh;
+    width: 30%;
+  }
+  90% {
+    height: 25vh;
+    width: 25%;
+  }
+  100% {
+    height: 30vh;
+    width: 30%;
+  }
+}
+
+@keyframes nav {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  40% {
+    height: 30vh;
+    width: 30%;
+  }
+  60% {
+    height: 25vh;
+    width: 25%;
+  }
+  80% {
+    height: 30vh;
+    width: 30%;
+  }
+  90% {
+    height: 25vh;
+    width: 25%;
+  }
+  100% {
+    height: 30vh;
+    width: 30%;
+  }
+}
+
+.About-link {
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.About-link:nth-child(1) {
+  margin-top: 2rem;
+}
+
+.Background-body .Background-pic {
+  width: 6rem;
+  height: 6rem;
+  -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Background-body .Pic-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img;
+  grid-column: 2/4;
+  margin: 0 auto;
+}
+
+.Background-body .Background-header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: heading;
+  grid-column: 1/5;
+  text-align: center;
+}
+
+.Background-body .Background-text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: txt;
+  text-align: center;
+  opacity: 1;
+}
+
+.Background-body {
+  color: #247BA0;
+  padding: 0.5rem;
+  width: 80%;
+  height: 50vh;
+  background: #d9dbec;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  z-index: 0;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "img img img img" "heading heading heading heading" "txt txt txt txt";
+}
+
+.slide-in {
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 80%;
+    heigth: 50vh;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 80%;
+    heigth: 50vh;
+  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=About.css.map */
