@@ -1,0 +1,164 @@
+$primary-color : #B2DBBF;
+$text-color : #FF1654;
+$background-color : #70C1B3;
+$link-color: #247BA0;
+
+.About{
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    background-color: $primary-color;
+}
+
+
+span.Nav-icon{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    position: absolute;
+    z-index: 5;
+    
+
+    .fa-bars{
+        font-size: 2rem;
+        color: $link-color;
+        
+        left: 1rem
+     }
+}
+
+.About-nav{
+    padding: 1rem 0.5rem ;
+    display: flex;
+    flex-direction: column;
+    background-color: $link-color;
+    height: 30vh;
+    width: 30%;
+    position: relative;
+    left: 0;
+    z-index: 5;
+    
+}
+
+.nav-animation{
+    box-shadow:  5px 5px 10px  rgba(0, 0, 0, 0.5);
+    animation-name: nav;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-duration: 500ms;
+}
+
+@keyframes nav {
+    0%{
+        width: 0; height: 0;
+    }
+    
+    40%{
+        height: 30vh; width: 30%;
+    }
+    60%{
+        height: 25vh; width: 25%;
+    }
+    80%{
+        height: 30vh; width: 30%;
+    }
+    90%{
+        height: 25vh; width: 25%;
+    }
+    100%{
+        height: 30vh; width: 30%;
+    }
+}
+
+.About-link{
+    color: white;
+    box-shadow:  5px 5px 10px  rgba(0, 0, 0, 0.5);
+
+}
+
+.About-link:nth-child(1){
+    margin-top: 2rem
+}
+
+.Background-body{
+    .Background-pic{
+        width: 6rem;
+        height: 6rem;
+        box-shadow:  -5px 5px 10px  rgba(0, 0, 0, 0.5);
+    }
+
+    .Pic-container{
+        grid-area: img;
+        grid-column: 2/4;
+        margin: 0 auto;
+    }
+
+    .Background-header{
+        grid-area: heading;
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .Background-text{
+        grid-area: txt;
+        text-align: center;
+        opacity: 1
+        
+    }
+}
+
+.Background-body{
+    color: $link-color;
+    padding: 0.5rem;
+    width: 80%;
+    height: 50vh;
+    background: rgb(217, 219, 236);
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    z-index: 0;
+    box-shadow:  5px 5px 10px  rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "img img img img" "heading heading heading heading" "txt txt txt txt";
+
+}
+
+.slide-in{
+    animation-name: slide-in;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slide-in{
+    from{
+        width: 0; height :  0
+    }
+    to{
+        width: 80%; heigth: 50vh
+    }
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 0.2
+    }
+    100%{ 
+        opacity: 1
+    }
+}
+
+
+
+  

@@ -3,7 +3,9 @@ $text-color : #FF1654;
 $background-color : #70C1B3;
 
 .HomeUi{
-    width:100%
+    width:100%;
+    height: 40vh;
+    position: relative
 }
 
 nav{
@@ -19,6 +21,7 @@ nav{
     position: fixed;
     top: 4rem;
     right: 0.5rem;
+    z-index: 10;
 }
 
 .socialLink{
@@ -45,6 +48,7 @@ nav{
     width: 100%;
     height: 3rem;
     background-color:$primary-color ;
+    z-index: 10;
 }
 
 a.nav-link {
@@ -96,12 +100,13 @@ a:hover.nav-link {
 
 .Home-body{
     font-size: 16px;
-    position: absolute;
+    position: relative;
     color: #FF1654;
-    margin-top: 10rem;
+    padding-top: 10rem;
     width: 100%;
     height: 40vh;
     text-align: center ;
+    margin-top: 3rem;
 
     h1.display-3 {
         position: relative;

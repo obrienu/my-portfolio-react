@@ -3,7 +3,9 @@ export class Mobile extends Component {
     render() {
         return (
             <div className="Mobile">
-                {this.children.props}
+                <div className="Mobile-NoCollapse">
+                    <imp />
+                </div>
             </div>
         );
     }
